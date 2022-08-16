@@ -2,6 +2,7 @@ interface DragonFlyCacheOptions {
   protectedBuckets?: number;
   probationaryBuckets?: number;
   bucketSlots?: number;
+  bytesPerSlot?: number;
   segments: string[];
 }
 
@@ -27,6 +28,7 @@ class DragonflyCache<T> {
       protectedBuckets: 56,
       bucketSlots: 14,
       probationaryBuckets: 4,
+      bytesPerSlot: 1024,
     };
 
     this.options = Object.assign(defaultOptions, options);
