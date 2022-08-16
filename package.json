@@ -1,0 +1,20 @@
+{
+  "name": "dragonfly-cache",
+  "version": "1.0.0",
+  "description": "TypeScript implementation of a Dragonfly cache",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BHouwens/dragonfly-cache.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BHouwens/dragonfly-cache/issues"
+  },
+  "homepage": "https://github.com/BHouwens/dragonfly-cache#readme"
+}
