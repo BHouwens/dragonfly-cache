@@ -13,9 +13,9 @@
     "type": "git",
     "url": "git+https://github.com/BHouwens/dragonfly-cache.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["cache", "dragonfly", "fast", "typescript"],
+  "author": "Byron Houwens",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/BHouwens/dragonfly-cache/issues"
   },
