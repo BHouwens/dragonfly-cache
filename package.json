@@ -1,6 +1,6 @@
 {
   "name": "dragonfly-cache",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "TypeScript implementation of a Dragonfly cache",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
