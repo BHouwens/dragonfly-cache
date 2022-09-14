@@ -32,6 +32,7 @@ const OPTIONS = {
 }
 
 const cache = new DragonflyCache(
+    OPTIONS.maxSegments,
     OPTIONS.regularBuckets,
     OPTIONS.stashBuckets,
     OPTIONS.bucketSize
