@@ -1,5 +1,5 @@
 import farmhash from "farmhash";
-import { LRUCache } from "./cache";
+import { LRUCache } from "./lru";
 import * as crypto from "crypto";
 
 const DEFAULTS = {
@@ -166,7 +166,7 @@ export class DragonflyCache<T> {
    * @param {T} value
    */
   public add(key: string, value: T) {
-    const segmentKey = this.generateSegmentKey(key as T);
+    const segmentKey = this.generateSegmentKey(key as unknown as T);
     const segment = this.getSegment(segmentKey);
 
     if (segment) {
@@ -184,7 +184,7 @@ export class DragonflyCache<T> {
    * @returns The value associated with the key, or null if not found
    */
   public get(key: string) {
-    const segmentKey = this.generateSegmentKey(key as T);
+    const segmentKey = this.generateSegmentKey(key as unknown as T);
     const segment = this.getSegment(segmentKey);
 
     if (segment) {
